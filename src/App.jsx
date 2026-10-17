@@ -45,6 +45,10 @@ const filmFavorites = [
   { title: 'Dilan 1991', image: 'https://cloud.filmfed.com/movies/posters/l_5e2819cb-b1ca-4af3-86eb-99b5b2acc111.jpg' },
   { title: 'Dilan 1990', image: 'https://assets-a1.kompasiana.com/items/album/2020/09/28/mv5byzm0nmq2yzgtzwzknc00n2jhlthjyzutmdnlzdczmzjimgy1xkeyxkfqcgdeqxvynzkzodk2mzcat-v1-5f718777d541df5725240d32.jpg' },
   { title: 'Ada Cinta di SMA', image: 'https://www.impawards.com/intl/indonesia/2016/posters/ada_cinta_di_sma.jpg' },
+  { title: 'Squid Game', image: 'https://img.khan.co.kr/news/2021/09/15/2021091501002055800174111.jpg' },
+  { title: 'Squid Game: The Challenge', image: 'https://cdn1.naekranie.pl/media/cache/amp/2023/11/AnyConv.com__Squid-Game-Wyzwanie_655f4fc26f6ce.jpg' },
+  { title: 'Squid Game: Season 2', image: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/202412/trailer-of-squid-games-2-out-273250114-3x4_0.jpg?VersionId=SIiWmb._OHueIMhwgYbJNv3YxJGS9VqW' },
+  { title: 'Squid Game S3', image: 'https://img.khan.co.kr/news/2025/01/31/news-p.v1.20250131.205a1f490c274fa2999f000014e04829_P1.webp' },
 ];
 const books = [
   {
