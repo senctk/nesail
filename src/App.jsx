@@ -37,14 +37,14 @@ const favorites = [
   { category: 'PLACE', title: 'Nature', note: 'Somewhere peaceful to slow down and take it all in.', image: '/images/nature.jpg' },
 ];
 const filmFavorites = [
-  { title: 'Laskar Pelangi', origin: 'INDONESIAN DRAMA · 2008', note: 'A warm story about friendship, dreams, and growing up.', style: 'film-poster-sunrise' },
-  { title: 'Nanti Kita Cerita Tentang Hari Ini', origin: 'INDONESIAN DRAMA · 2020', note: 'A tender reminder that every family keeps its own stories.', style: 'film-poster-evening' },
-  { title: '5 cm', origin: 'INDONESIAN ADVENTURE · 2012', note: 'Friendship, a long journey, and a mountain worth remembering.', style: 'film-poster-mountain' },
-  { title: 'Ada Apa dengan Cinta?', origin: 'INDONESIAN ROMANCE · 2002', note: 'Poetry, first love, and the feeling of being young.', style: 'film-poster-rose' },
-  { title: 'Flipped', origin: 'COMING-OF-AGE · 2010', note: 'A sweet, gentle story told from two different points of view.', style: 'film-poster-garden' },
-  { title: 'Little Women', origin: 'PERIOD DRAMA · 2019', note: 'Sisters finding their own way through life and art.', style: 'film-poster-paper' },
-  { title: 'Spirited Away', origin: 'ANIMATION · 2001', note: 'A dreamlike journey into a world full of wonder.', style: 'film-poster-night' },
-  { title: 'La La Land', origin: 'MUSICAL · 2016', note: 'A colorful love letter to ambition, music, and the city.', style: 'film-poster-bluehour' },
+  { title: 'Laskar Pelangi', image: 'https://www.kinoundco.de/media/cache/posters/images/t/pIkafUVOWa4LrInh0RF80KKBBeK.jpg' },
+  { title: 'Nanti Kita Cerita Tentang Hari Ini', image: 'https://d3lmgsai2rsy7d.cloudfront.net/gempak/media/article/2020/Apr/b9950c8b-e3fb-451e-a3a4-88c39a779dc5.jpeg' },
+  { title: '5 cm', image: 'https://sorayaintercinefilms.com/images/5cm600.webp' },
+  { title: 'Ada Apa dengan Cinta?', image: 'https://image.tmdb.org/t/p/original/7LDeJ5Ak8b4F4Kl9rfaNfAFl07W.jpg' },
+  { title: 'Flipped', image: 'https://mr.comingsoon.it/imgdb/locandine/big/48086.jpg' },
+  { title: 'Little Women', image: 'https://images.squarespace-cdn.com/content/v1/6003eb602f57da1e2e6e5344/1610953922744-NQJZ9MAHUKPUMMQOD8R0/little-women-official-poster.jpg' },
+  { title: 'Spirited Away', image: 'https://cdn.posteritati.com/posters/000/000/068/055/spirited-away-md-web.jpg' },
+  { title: 'La La Land', image: 'https://artofthemovies.co.uk/cdn/shop/files/IMG_2372_23f37a49-0685-4c41-9fcb-251769035c62.jpg?v=1770883511&width=990' },
 ];
 const books = [
   {
@@ -626,15 +626,10 @@ function App() {
             <p>A few stories that feel like keeping a little piece of the cinema with me.</p>
           </div>
           <div className="film-grid">
-            {filmFavorites.map((film, i) => (
+            {filmFavorites.map((film) => (
               <article className="film-card" key={film.title}>
-                <div className={`film-poster ${film.style}`}>
-                  <span className="film-poster-number">NO. {String(i + 1).padStart(2, '0')}</span>
-                  <span className="film-poster-star">✦</span>
-                  <strong>{film.title}</strong>
-                  <small>{film.origin}</small>
-                </div>
-                <p>{film.note}</p>
+                <img className="film-photo" src={film.image} alt={film.title} loading="lazy" />
+                <h3>{film.title}</h3>
               </article>
             ))}
           </div>
