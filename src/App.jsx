@@ -12,14 +12,14 @@ const nav = [
   ['/contact', 'Contact'],
 ];
 const photos = [
-  { title: 'A peaceful morning', type: 'Surabaya', image: '/images/galerisatu.jpeg' },
-  { title: 'A quiet place', type: 'Surabaya', image: '/images/galeridua.jpeg' },
-  { title: 'Blue hour', type: 'Surabaya', image: '/images/galeritiga.jpeg' },
-  { title: 'Today notes', type: 'Surabaya', image: '/images/galeriempat.jpeg' },
+  { title: 'A peaceful morning', type: 'Malang', image: '/images/galerisatu.jpeg' },
+  { title: 'A quiet place', type: 'Malang', image: '/images/galeridua.jpeg' },
+  { title: 'Blue hour', type: 'Malang', image: '/images/galeritiga.jpeg' },
+  { title: 'Today notes', type: 'Malang', image: '/images/galeriempat.jpeg' },
   { title: 'Weekend light', type: 'Malang', image: '/images/galerilima.jpeg' },
   { title: 'Simple things', type: 'Malang', image: '/images/galerienam.jpeg' },
   { title: 'A quiet afternoon', type: 'Malang', image: '/images/galeritujuh.jpeg' },
-  { title: 'Small joys', type: 'Malang', image: '/images/galeridelapan.jpeg' },
+  { title: 'Small joys', type: 'Bandung', image: '/images/galeridelapan.jpeg' },
   { title: 'Golden hour', type: 'Bandung', image: '/images/galerisembilan.jpeg' },
   { title: 'A favorite day', type: 'Bandung', image: '/images/galerisepuluh.jpeg' },
   { title: 'A little escape', type: 'Bandung', image: '/images/galerisebelas.jpeg' },
@@ -232,6 +232,7 @@ function App() {
           className="photo-card"
           key={p.title}
           onClick={() => setLightbox(photos.indexOf(p))}
+          aria-label={`Open photo: ${p.title}`}
         >
           <div className="gallery-photo-frame">
             <img
@@ -247,7 +248,6 @@ function App() {
             />
             <span className="gallery-photo-fallback">ADD PHOTO: {p.image.split('/').pop()}</span>
           </div>
-          <b>{p.title}</b>
         </button>
       ))}
     </div>
@@ -899,7 +899,6 @@ function App() {
           >
             ›
           </button>
-          <p>{photos[lightbox % photos.length].title}</p>
         </div>
       )}
     </>
