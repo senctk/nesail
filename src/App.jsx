@@ -113,7 +113,7 @@ const journeyItems = [
   { type: 'EDUCATION', title: 'SD Negeri Panjang Jiwo II / 266', place: 'Surabaya', period: '2008 - 2014' },
   { type: 'EDUCATION', title: 'SMP Negeri 35 Surabaya', place: 'Surabaya', period: '2014 - 2017' },
   { type: 'EDUCATION', title: 'MA Amanatul Ummah Surabaya', place: 'Surabaya', period: '2017 - 2020' },
-  { type: 'EDUCATION', title: 'Politeknik Negeri Malang', place: 'D-IV Teknik Informatika', period: '2020 - 2024' },
+  { type: 'EDUCATION', title: 'Politeknik Negeri Malang', place: 'D-IV Teknik Informatika | Skripsi : Sistem Pendukung Keputusan Penilaian Kinerja Karyawan Untuk Menentukan Karyawan Terbaik Oleh Karyawan PT Jagad Karya Utama dengan Menggunakan Metode Fuzzy - TOPSIS', period: '2020 - 2024' },
   { type: 'INTERNSHIP', title: 'Internship - Malang', place: 'Web Developer', period: '2023' },
   { type: 'WORK EXPERIENCE', title: 'Work Experience - Bandung', place: 'Web Developer | Digital Marketing | UI/UX | IT Support', period: '2025 - 2026' },
   { type: 'WORK EXPERIENCE', title: 'Asisten Dosen - Bandung', place: 'Pemrograman | Basis Data', period: '2025 - 2026' },
