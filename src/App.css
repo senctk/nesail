@@ -544,3 +544,37 @@ footer{background:#f7fafc}
   #journey-preview .journey-strip>span{min-height:50px;padding:9px 8px;font-size:12px}
 }
 
+/* Reduce decoration and tighten spacing across the mobile home page. */
+@media(max-width:560px){
+  main:has(>.hero) .home-preview{
+    padding:40px 7%;
+    background-image:none;
+  }
+  main:has(>.hero) .home-preview::before,
+  main:has(>.hero) .home-preview::after{display:none}
+  main:has(>.hero) .home-preview .section-top{
+    align-items:flex-start;
+    gap:8px;
+    margin-bottom:18px;
+  }
+  main:has(>.hero) .home-preview .section-top h2{
+    font-size:26px;
+    line-height:1.25;
+  }
+  main:has(>.hero) .home-preview .section-top .inline-link{font-size:11px}
+  main:has(>.hero) .preview-favorite-card,
+  main:has(>.hero) .preview-favorite-card:nth-child(odd),
+  main:has(>.hero) .preview-favorite-card:nth-child(even),
+  main:has(>.hero) .preview-hobbies article,
+  main:has(>.hero) .preview-hobbies article:nth-child(odd),
+  main:has(>.hero) .preview-hobbies article:nth-child(even){transform:none}
+  main:has(>.hero) .preview-hobbies article{box-shadow:0 3px 12px #45677d0c}
+  main:has(>.hero) .preview-note{max-width:100%;font-size:17px}
+  main:has(>.hero) .home-contact-preview{padding:44px 7% 50px}
+}
+@media(max-width:380px){
+  main:has(>.hero) .home-preview{padding-left:6%;padding-right:6%}
+  main:has(>.hero) .preview-favorites-grid{grid-template-columns:1fr}
+  main:has(>.hero) .preview-favorite-image{aspect-ratio:16/10}
+}
+
