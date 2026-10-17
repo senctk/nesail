@@ -12,21 +12,21 @@ const nav = [
   ['/contact', 'Contact'],
 ];
 const photos = [
-  { title: 'A peaceful morning', type: 'Little moments', image: '/images/galerisatu.jpeg' },
-  { title: 'A quiet place', type: 'Places', image: '/images/galeridua.jpeg' },
-  { title: 'Blue hour', type: 'Little moments', image: '/images/galeritiga.jpeg' },
-  { title: 'Today notes', type: 'Everyday life', image: '/images/galeriempat.jpeg' },
-  { title: 'Weekend light', type: 'Places', image: '/images/galerilima.jpeg' },
-  { title: 'Simple things', type: 'Everyday life', image: '/images/galerienam.jpeg' },
-  { title: 'A quiet afternoon', type: 'Little moments', image: '/images/galeritujuh.jpeg' },
-  { title: 'Small joys', type: 'Everyday life', image: '/images/galeridelapan.jpeg' },
-  { title: 'Golden hour', type: 'Places', image: '/images/galerisembilan.jpeg' },
-  { title: 'A favorite day', type: 'Little moments', image: '/images/galerisepuluh.jpeg' },
-  { title: 'A little escape', type: 'Places', image: '/images/galerisebelas.jpeg' },
-  { title: 'Soft blue sky', type: 'Everyday life', image: '/images/galeriduabelas.jpeg' },
-  { title: 'A moment to keep', type: 'Little moments', image: '/images/galeritigabelas.jpeg' },
-  { title: 'Slow Sunday', type: 'Everyday life', image: '/images/galeriempatbelas.jpeg' },
-  { title: 'My happy place', type: 'Places', image: '/images/galerilimabelas.jpeg' },
+  { title: 'A peaceful morning', type: 'Surabaya', image: '/images/galerisatu.jpeg' },
+  { title: 'A quiet place', type: 'Surabaya', image: '/images/galeridua.jpeg' },
+  { title: 'Blue hour', type: 'Surabaya', image: '/images/galeritiga.jpeg' },
+  { title: 'Today notes', type: 'Surabaya', image: '/images/galeriempat.jpeg' },
+  { title: 'Weekend light', type: 'Malang', image: '/images/galerilima.jpeg' },
+  { title: 'Simple things', type: 'Malang', image: '/images/galerienam.jpeg' },
+  { title: 'A quiet afternoon', type: 'Malang', image: '/images/galeritujuh.jpeg' },
+  { title: 'Small joys', type: 'Malang', image: '/images/galeridelapan.jpeg' },
+  { title: 'Golden hour', type: 'Bandung', image: '/images/galerisembilan.jpeg' },
+  { title: 'A favorite day', type: 'Bandung', image: '/images/galerisepuluh.jpeg' },
+  { title: 'A little escape', type: 'Bandung', image: '/images/galerisebelas.jpeg' },
+  { title: 'Soft blue sky', type: 'Bandung', image: '/images/galeriduabelas.jpeg' },
+  { title: 'A moment to keep', type: 'MDPL', image: '/images/galeritigabelas.jpeg' },
+  { title: 'Slow Sunday', type: 'MDPL', image: '/images/galeriempatbelas.jpeg' },
+  { title: 'My happy place', type: 'MDPL', image: '/images/galerilimabelas.jpeg' },
 ];
 const favorites = [
   { category: 'FOOD', title: 'Sushi', note: 'A favorite bite I always enjoy.', image: '/images/sushi.jpg' },
@@ -731,7 +731,7 @@ function App() {
       <>
         {heading('THE KEEPSAKE BOX', 'Collected <i>moments.</i>', 'A little gallery of days I want to remember.')}
         <div className="filters">
-          {['All', 'Little moments', 'Places', 'Everyday life'].map((f) => (
+          {['All', 'Surabaya', 'Malang', 'Bandung', 'MDPL'].map((f) => (
             <button
               className={filter === f ? 'selected' : ''}
               onClick={() => setFilter(f)}
