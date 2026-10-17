@@ -512,3 +512,35 @@ footer{background:#f7fafc}
   .socials a{flex:1 1 120px;justify-content:center}
 }
 
+/* Keep the home journey preview readable on narrow screens. */
+@media(max-width:560px){
+  #journey-preview .journey-strip{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    justify-content:stretch;
+    align-items:stretch;
+    gap:10px;
+    width:100%;
+    margin:24px auto 10px;
+  }
+  #journey-preview .journey-strip>span{
+    display:flex;
+    min-width:0;
+    min-height:54px;
+    align-items:center;
+    justify-content:center;
+    padding:10px 12px;
+    border-radius:14px;
+    text-align:center;
+    line-height:1.4;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+  #journey-preview .journey-strip>span:last-child{grid-column:1/-1}
+  #journey-preview .journey-strip>i{display:none}
+}
+@media(max-width:380px){
+  #journey-preview .journey-strip{gap:8px}
+  #journey-preview .journey-strip>span{min-height:50px;padding:9px 8px;font-size:12px}
+}
+
