@@ -36,6 +36,16 @@ const favorites = [
   { category: 'MY IDOL', title: 'Iqbaal Ramadhan', note: 'Someone whose work and creativity I admire.', image: '/images/iqbaal-ramadhan.jpg' },
   { category: 'PLACE', title: 'Nature', note: 'Somewhere peaceful to slow down and take it all in.', image: '/images/nature.jpg' },
 ];
+const filmFavorites = [
+  { title: 'Laskar Pelangi', origin: 'INDONESIAN DRAMA · 2008', note: 'A warm story about friendship, dreams, and growing up.', style: 'film-poster-sunrise' },
+  { title: 'Nanti Kita Cerita Tentang Hari Ini', origin: 'INDONESIAN DRAMA · 2020', note: 'A tender reminder that every family keeps its own stories.', style: 'film-poster-evening' },
+  { title: '5 cm', origin: 'INDONESIAN ADVENTURE · 2012', note: 'Friendship, a long journey, and a mountain worth remembering.', style: 'film-poster-mountain' },
+  { title: 'Ada Apa dengan Cinta?', origin: 'INDONESIAN ROMANCE · 2002', note: 'Poetry, first love, and the feeling of being young.', style: 'film-poster-rose' },
+  { title: 'Flipped', origin: 'COMING-OF-AGE · 2010', note: 'A sweet, gentle story told from two different points of view.', style: 'film-poster-garden' },
+  { title: 'Little Women', origin: 'PERIOD DRAMA · 2019', note: 'Sisters finding their own way through life and art.', style: 'film-poster-paper' },
+  { title: 'Spirited Away', origin: 'ANIMATION · 2001', note: 'A dreamlike journey into a world full of wonder.', style: 'film-poster-night' },
+  { title: 'La La Land', origin: 'MUSICAL · 2016', note: 'A colorful love letter to ambition, music, and the city.', style: 'film-poster-bluehour' },
+];
 const books = [
   {
     title: 'Dua Tiga',
@@ -609,6 +619,26 @@ function App() {
             </article>
           ))}
         </div>
+        <section className="film-favorites">
+          <div className="film-favorites-heading">
+            <span className="eyebrow">LITTLE STORIES I LOVE</span>
+            <h2>My favorite <i>films.</i></h2>
+            <p>A few stories that feel like keeping a little piece of the cinema with me.</p>
+          </div>
+          <div className="film-grid">
+            {filmFavorites.map((film, i) => (
+              <article className="film-card" key={film.title}>
+                <div className={`film-poster ${film.style}`}>
+                  <span className="film-poster-number">NO. {String(i + 1).padStart(2, '0')}</span>
+                  <span className="film-poster-star">✦</span>
+                  <strong>{film.title}</strong>
+                  <small>{film.origin}</small>
+                </div>
+                <p>{film.note}</p>
+              </article>
+            ))}
+          </div>
+        </section>
       </>
     ),
     '/hobbies': (
