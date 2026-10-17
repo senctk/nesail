@@ -49,6 +49,10 @@ const filmFavorites = [
   { title: 'Squid Game: The Challenge', image: 'https://cdn1.naekranie.pl/media/cache/amp/2023/11/AnyConv.com__Squid-Game-Wyzwanie_655f4fc26f6ce.jpg' },
   { title: 'Squid Game: Season 2', image: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/202412/trailer-of-squid-games-2-out-273250114-3x4_0.jpg?VersionId=SIiWmb._OHueIMhwgYbJNv3YxJGS9VqW' },
   { title: 'Squid Game S3', image: 'https://img.khan.co.kr/news/2025/01/31/news-p.v1.20250131.205a1f490c274fa2999f000014e04829_P1.webp' },
+  { title: 'Daily Dose Of Sunshine', image: 'https://www.onbuub.com/sites/default/files/2024-05/%D9%85%D8%B3%D9%84%D8%B3%D9%84-%D8%AC%D8%B1%D8%B9%D8%A9%20%D9%8A%D9%88%D9%85%D9%8A%D8%A9%20%D9%85%D9%86%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%A4%D9%84-%D8%A7%D9%84%D9%85%D9%84%D8%B5%D9%82%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A.jpg' },
+  { title: '2521', image: 'https://images.vocus.cc/5d26f3bd-f4ca-4431-8eb8-d604d9f0274b.jpg' },
+  { title: 'As the Gods Will', image: 'https://image.tmdb.org/t/p/original/m6ulKKB6zJr1vwZIrSFs5axWUvL.jpg' },
+  { title: 'Battle Royale', image: 'https://lp.p.pia.jp/shared/materials/14bfd40c-45f3-11e8-8029-fbb52deff1d6/origin.jpg' },
 ];
 const books = [
   {
