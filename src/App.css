@@ -472,3 +472,43 @@ footer{background:#f7fafc}
 @media(max-width:800px){.gallery-photo-frame{height:170px}}
 @media(max-width:560px){.gallery-photo-frame{height:145px}}
 
+/* Final small-screen layout safeguards */
+@media(max-width:800px){
+  .hero-copy,.hero-photo,.about-layout>*,.hobby>*,.achievement-card>*{min-width:0}
+  .section-top .inline-link{max-width:100%;line-height:1.6}
+  .timeline-item>div,.about-paper,.experience-card,.book-card{min-width:0;overflow-wrap:anywhere}
+  .journey-strip{flex-wrap:wrap;gap:10px}
+  .journey-strip>i{width:20px}
+}
+@media(max-width:560px){
+  .brand{max-width:100%;min-width:0}
+  .brand>span:last-child{min-width:0;line-height:1.35}
+  .brand small{font-size:7px;letter-spacing:.8px;line-height:1.5}
+  .nav{width:100%;overflow:hidden}
+  .nav-links{width:100%;min-width:0}
+  .hero-copy{max-width:100%}
+  .hero h1{line-height:1.12;overflow-wrap:anywhere}
+  .hero-stamp{max-width:42%;letter-spacing:1px}
+  .section-top{width:100%}
+  .section-top>div{max-width:100%}
+  .favorite:nth-child(3n+2){margin-top:0}
+  .journey-strip{gap:8px}
+  .journey-strip>span{padding:9px 11px;font-size:13px}
+  .journey-strip>i{width:12px}
+  .book-info h3,.favorite h3,.timeline h2{overflow-wrap:anywhere}
+  .filters{padding:0 7%}
+  .filters button{min-height:36px}
+  .lightbox p{max-width:80%;text-align:center;line-height:1.5}
+}
+@media(max-width:380px){
+  .hero{padding-left:6%;padding-right:6%}
+  .hero-photo{width:92%}
+  .section,.works-section,.achievement-section{padding-left:6%;padding-right:6%}
+  .favorite-grid,.photo-grid{padding-left:6%;padding-right:6%}
+  .book-grid{grid-template-columns:1fr}
+  .book-cover{max-height:420px}
+  .contact-card{margin-left:5%;margin-right:5%}
+  .timeline{margin-left:7%;margin-right:5%}
+  .socials a{flex:1 1 120px;justify-content:center}
+}
+
