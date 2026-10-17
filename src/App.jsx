@@ -37,14 +37,14 @@ const favorites = [
   { category: 'PLACE', title: 'Nature', note: 'Somewhere peaceful to slow down and take it all in.', image: '/images/nature.jpg' },
 ];
 const filmFavorites = [
-  { title: 'Laskar Pelangi', image: 'https://www.kinoundco.de/media/cache/posters/images/t/pIkafUVOWa4LrInh0RF80KKBBeK.jpg' },
-  { title: 'Nanti Kita Cerita Tentang Hari Ini', image: 'https://d3lmgsai2rsy7d.cloudfront.net/gempak/media/article/2020/Apr/b9950c8b-e3fb-451e-a3a4-88c39a779dc5.jpeg' },
-  { title: '5 cm', image: 'https://sorayaintercinefilms.com/images/5cm600.webp' },
-  { title: 'Ada Apa dengan Cinta?', image: 'https://image.tmdb.org/t/p/original/7LDeJ5Ak8b4F4Kl9rfaNfAFl07W.jpg' },
-  { title: 'Flipped', image: 'https://mr.comingsoon.it/imgdb/locandine/big/48086.jpg' },
-  { title: 'Little Women', image: 'https://images.squarespace-cdn.com/content/v1/6003eb602f57da1e2e6e5344/1610953922744-NQJZ9MAHUKPUMMQOD8R0/little-women-official-poster.jpg' },
-  { title: 'Spirited Away', image: 'https://cdn.posteritati.com/posters/000/000/068/055/spirited-away-md-web.jpg' },
-  { title: 'La La Land', image: 'https://artofthemovies.co.uk/cdn/shop/files/IMG_2372_23f37a49-0685-4c41-9fcb-251769035c62.jpg?v=1770883511&width=990' },
+  { title: 'Perayaan Mati Rasa', image: 'https://image.tmdb.org/t/p/original/35idye8r15MyN6miIkIeo2brapd.jpg' },
+  { title: 'Mencuri Raden Saleh', image: 'https://file.indonesianfilmcenter.com/uploads/2022-08/mencuri-raden-saleh.jpg' },
+  { title: 'Milea: Suara dari Dilan', image: 'https://image.tmdb.org/t/p/original/n9QG0Sfd4DNEIMOx113d3HkBgtP.jpg' },
+  { title: 'Milea: Suara dari Dilan EXTENDED', image: 'https://jadwalnonton.com/data/upload/movies/2020/milea-suara-dari-dilan-extended-486d4f28.jpg' },
+  { title: 'Bumi Manusia', image: 'https://assets-a1.kompasiana.com/items/album/2019/08/18/62148122-335514760449701-7620556996711357656-n-5d59061d0d82305ac94e0d32.jpg?t=o&v=1200' },
+  { title: 'Dilan 1991', image: 'https://cloud.filmfed.com/movies/posters/l_5e2819cb-b1ca-4af3-86eb-99b5b2acc111.jpg' },
+  { title: 'Dilan 1990', image: 'https://assets-a1.kompasiana.com/items/album/2020/09/28/mv5byzm0nmq2yzgtzwzknc00n2jhlthjyzutmdnlzdczmzjimgy1xkeyxkfqcgdeqxvynzkzodk2mzcat-v1-5f718777d541df5725240d32.jpg' },
+  { title: 'Ada Cinta di SMA', image: 'https://www.impawards.com/intl/indonesia/2016/posters/ada_cinta_di_sma.jpg' },
 ];
 const books = [
   {
