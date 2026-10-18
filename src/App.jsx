@@ -24,9 +24,7 @@ const photos = [
   { title: 'A favorite day', type: 'Bandung', image: '/images/galerisepuluh.jpeg' },
   { title: 'A little escape', type: 'Bandung', image: '/images/galerisebelas.jpeg' },
   { title: 'Soft blue sky', type: 'Bandung', image: '/images/galeriduabelas.jpeg' },
-  { title: 'A moment to keep', type: 'MDPL', image: '/images/galeritigabelas.jpeg' },
-  { title: 'Slow Sunday', type: 'MDPL', image: '/images/galeriempatbelas.jpeg' },
-  { title: 'My happy place', type: 'MDPL', image: '/images/galerilimabelas.jpeg' },
+ 
 ];
 const favorites = [
   { category: 'FOOD', title: 'Sushi', note: 'A favorite bite I always enjoy.', image: '/images/sushi.jpg' },
